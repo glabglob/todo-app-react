@@ -1,0 +1,48 @@
+.addTask__field {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+
+    .taskList__input {
+        text-align: left;
+        color: #595550;
+        padding: 10px 0;
+        padding-left: 10px;
+        width: 400px;
+        font-size: 18px;
+        border: 2px solid #d9614c;
+        border-radius: 12px;
+        margin-right: 5px;
+
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    .taskList__button {
+        text-align: center;
+        padding: 10px 20px;
+        background-color: #d9614c;
+        border: none;
+        color: #fffbfa;
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: 1px;
+        border-radius: 12px;
+        margin-left: 5px;
+        transition: transform 150ms ease;
+
+        &:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+        }
+
+        &:active {
+            background-color: #b02324;
+            transform: scale(1);
+
+        }
+    }
+}

@@ -5,3 +5,5 @@
 React
 
 Sass
+
+React Icons
