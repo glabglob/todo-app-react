@@ -6,15 +6,15 @@
     margin: 10px 0;
 
     .taskList__input {
-        text-align: left;
-        color: #595550;
+        width: 400px;
+        margin-right: 5px;
         padding: 10px 0;
         padding-left: 10px;
-        width: 400px;
+        color: #595550;
+        text-align: left;
         font-size: 18px;
         border: 2px solid #d9614c;
         border-radius: 12px;
-        margin-right: 5px;
 
         &:focus {
             outline: 0;
@@ -22,16 +22,16 @@
     }
 
     .taskList__button {
-        text-align: center;
         padding: 10px 20px;
+        margin-left: 5px;
+        text-align: center;
         background-color: #d9614c;
-        border: none;
         color: #fffbfa;
         font-weight: 700;
         font-size: 20px;
         letter-spacing: 1px;
+        border: none;
         border-radius: 12px;
-        margin-left: 5px;
         transition: transform 150ms ease;
 
         &:hover {
@@ -42,7 +42,6 @@
         &:active {
             background-color: #b02324;
             transform: scale(1);
-
         }
     }
 }
