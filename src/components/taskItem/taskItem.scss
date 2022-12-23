@@ -30,6 +30,13 @@
         margin-left: 5px;
         cursor: pointer;
         color: #d9614c;
+        transition: transform 150ms ease;
+
+        &:hover {
+            transform: scale(1.05);
+            cursor: pointer;
+            color: #b02324;
+        }
     }
 
     .chek {
