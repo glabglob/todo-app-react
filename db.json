@@ -1,11 +1,25 @@
 {
-    "posts": [
-      {
-        "id": 1,
-        "title": "hello"
-      }
-    ],
-    "profile": {
-      "name": "glabglob"
+  "posts": [
+    {
+      "id": 1,
+      "title": "hello"
     }
-  }
+  ],
+  "profile": {
+    "name": "glabglob"
+  },
+  "filters": [
+    {
+      "name": "all",
+      "label": "All Tasks"
+    },
+    {
+      "name": "colpeted",
+      "label": "Colpeted"
+    },
+    {
+      "name": "uncompeleted",
+      "label": "You need to do"
+    }
+  ]
+}
