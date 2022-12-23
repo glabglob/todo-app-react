@@ -1,0 +1,26 @@
+.header__menu-list {
+    margin-top: 0px;
+    padding: 0px;
+    color: #fffdfa;
+    list-style: none;
+    text-align: left;
+}
+
+.header__menu-link {
+    padding: 25px 0 15px 15px;
+    font-size: 18px;
+    border-bottom: 1px solid #b02324;
+    cursor: pointer;
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    &:hover {
+        background-color: rgba(255,255,255,0.1);
+    }
+}
+
+.folderList {
+    font-weight: 700;
+}

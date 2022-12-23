@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import SideBar from '../sideBar/SideBar';
+
 import './header.scss';
 
 const Header: React.FC = () => {
@@ -19,12 +21,7 @@ const Header: React.FC = () => {
                 <span></span>
             </div>
             <div className={isOpen ? 'header__menu-content content-opened' : 'header__menu-content'}>
-                <ul className='header__menu-list' >
-                    <li className='header__menu-link'>All Tasks</li>
-                    <li className='header__menu-link'>Completed</li>
-                    <li className='header__menu-link'>You need to do</li>
-                    <li className='header__menu-link'>Folders</li>
-                </ul>
+                <SideBar />
             </div>
             <div className="app__header-text">ToDO App</div>
         </header>

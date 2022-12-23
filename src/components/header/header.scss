@@ -79,28 +79,9 @@
         transform: translateX(-100%);
         transition: transform 300ms;
 
-        .header__menu-list {
-            margin-top: 0px;
-            padding: 0px;
-            color: #fffdfa;
-            list-style-type: none;
-            text-align: left;
-        }
-
-        .header__menu-link {
-            padding: 25px 0 15px 15px;
-            font-size: 18px;
-            border-bottom: 1px solid #b02324;
-
-            &:last-child {
-                border-bottom: none;
-            }
-        }
-
         &.content-opened {
             transform: none;
         }
-
     }
 }
 
