@@ -11,3 +11,5 @@ React Icons
 My JSON Server for Data Base
 
 Redux Toolkit
+
+React Spinners
