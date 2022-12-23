@@ -1,0 +1,113 @@
+.app__header {
+    height: 40px;
+    background-color: #d9614c;
+    box-shadow: 2px 5px 5px 0 rgba(0, 0, 0, .12);
+
+    .header__menu-toggler {
+        content: '';
+        height: 48px;
+        width: 55px;
+        position: absolute;
+        top: 5px;
+        left: 8px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .header__menu {
+        position: relative;
+        width: 40px;
+        height: 45px;
+        float: left;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+
+        span {
+            position: absolute;
+            height: 3px;
+            width: 65%;
+            margin: 7px 0 0 10px;
+            background: #fffdfa;
+            border-radius: 8px;
+            transform: rotate(0deg);
+            transition: .25s ease-in-out;
+
+            &:nth-child(1) {
+                top: 2px;
+            }
+
+            &:nth-child(2) {
+                top: 10px;
+            }
+
+            &:nth-child(3) {
+                top: 10px;
+            }
+
+            &:nth-child(4) {
+                top: 18px
+            }
+        }
+    }
+
+    .menu-opened {
+        span {
+            &:nth-child(1) {
+                opacity: 0;
+            }
+
+            &:nth-child(2) {
+                transform: rotate(45deg);
+            }
+
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+            }
+
+            &:nth-child(4) {
+                opacity: 0;
+            }
+        }
+    }
+
+    .header__menu-content {
+        position: absolute;
+        height: calc(100vh - 40px);
+        margin-top: 40px;
+        width: 220px;
+        background-color: #da4546;
+        transform: translateX(-100%);
+        transition: transform 300ms;
+
+        .header__menu-list {
+            margin-top: 0px;
+            padding: 0px;
+            color: #fffdfa;
+            list-style-type: none;
+            text-align: left;
+        }
+
+        .header__menu-link {
+            padding: 25px 0 15px 15px;
+            font-size: 18px;
+            border-bottom: 1px solid #b02324;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+
+        &.content-opened {
+            transform: none;
+        }
+
+    }
+}
+
+.app__header-text {
+    text-align: left;
+    line-height: 1.5;
+    font-size: 25px;
+    font-weight: 600;
+    color: #fffdfa;
+}
