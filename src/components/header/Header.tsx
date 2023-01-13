@@ -23,7 +23,7 @@ const Header: React.FC = () => {
             <div className={isOpen ? 'header__menu-content content-opened' : 'header__menu-content'}>
                 <SideBar />
             </div>
-            <div className="app__header-text">ToDO App</div>
+            <div className="app__header-text">ToDo App</div>
         </header>
     )
 }

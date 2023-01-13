@@ -10,7 +10,7 @@ import './taskItem.scss';
 const TaskItem: React.FC = () => {
     return (
         <div className="task__item">
-            <h3 className="task__item-header">Task folder</h3>
+            <h3 className="task__item-header">Task folder name</h3>
             <ul className='task__item-list' >
                 <li className='task__item-listItem' >
                     <div className="listItem-item">
